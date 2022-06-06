@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstaFácil - Home</title>
+    <link rel="stylesheet" href="~/Content/contatostyle.css">
+    <link rel="stylesheet" href="~/Content/Globalstyle.css">
+    <script src="https://kit.fontawesome.com/aa67c53adc.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".botaomenu").click(function () {
+                $(".wrapper-mobile ul").slideToggle();
+                $(".wrapper-mobile i").toggleClass("fa-bars");
+                $(".wrapper-mobile i").toggleClass("fa-times");
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+
+        <div class="wrapper-mobile">
+            <div class="botaomenu">
+                <div class="fa-3x">
+                    <i class="fa-solid fa-bars fa-beat" style="--fa-animation-duration: 0.5s;"></i>
+                </div>
+            </div>
+            <ul class="nav-area">
+                <li></li>
+                <li><a href="/Home/homeindex">Home</a></li>
+                <li><a href="/Tutorial/tutorialindex">Tutorial</a></li>
+                <li><a href="/Contato/contatoindex">Contate-nos</a></li>
+                <li><a href="/Login/LoginIndex">Login</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <h1>Esta<span>Fácil</span></h1>
+        </div>
+        <div class="duvida-page">
+            <div class="form">
+                <form action="/contato/Create" method="post">
+                    <input type="text" placeholder="nome" name="nome" />
+                    <input type="text" placeholder="email" name="email" />
+                    <input type="text" placeholder="telefone" name="telefone" />
+                    <textarea rows="6" cols="33" placeholder=" deixe sua dúvida" name="duvida"></textarea>
+                    <br /><br /><br />
+
+                    <button>Enviar</button>
+
+                </form>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

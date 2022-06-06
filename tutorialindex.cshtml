@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstaFácil - Tutorial</title>
+    <link rel="stylesheet" href="~/Content/tutorialstyle.css">
+    <link rel="stylesheet" href="~/Content/Globalstyle.css">
+    <script src="https://kit.fontawesome.com/aa67c53adc.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".botaomenu").click(function () {
+                $(".wrapper-mobile ul").slideToggle();
+                $(".wrapper-mobile i").toggleClass("fa-bars");
+                $(".wrapper-mobile i").toggleClass("fa-times");
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+
+        <div class="wrapper-mobile">
+            <div class="botaomenu">
+                <div class="fa-3x">
+                    <i class="fa-solid fa-bars fa-beat" style="--fa-animation-duration: 0.5s;"></i>
+                </div>
+            </div>
+            <ul class="nav-area">
+                <li></li>
+                <li><a href="/Home/homeindex">Home</a></li>
+                <li><a href="/Tutorial/tutorialindex">Tutorial</a></li>
+                <li><a href="/Contato/contatoindex">Contate-nos</a></li>
+                <li><a href="/Login/LoginIndex">Login</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <h1>
+                Esta<span>Fácil</span>
+            </h1>
+        </div>
+
+        <div class="download">
+            <h1>
+                Tutorial:
+            </h1>
+            <p>
+                Ao pressionar o botão você será redirecionado ao vídeo !
+            </p>
+            <a href="https://www.youtube.com/watch?v=y-cJuCMzpdA" target="_blank" class="mobile">Redirecionar</a>
+        </div>
+
+    </header>
+</body>
